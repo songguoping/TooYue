@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你已经"
+            app:layout_constraintBottom_toBottomOf="@id/mTvAgo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/mTvAgo"
+            app:layout_constraintTop_toTopOf="@id/mTvAgo" />
+
+        <com.coderfeng.tooyue.common.view.RandomTextView
+            android:id="@+id/mTvAgo"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_40"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="岁了"
+            app:layout_constraintBottom_toBottomOf="@id/mTvAgo"
+            app:layout_constraintLeft_toRightOf="@id/mTvAgo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mTvAgo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mTvUserDataTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_20"
+            android:text="在这个世界上，你已经存在"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mTvAgo" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRvUserData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mTvUserDataTag" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mBtnDead"
+            android:layout_width="@dimen/dp_150"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:text="死之钟"
+            android:gravity="center"
+            android:background="@drawable/shape_bg_dead"
+            android:layout_height="@dimen/dp_45"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
