@@ -24,7 +24,7 @@ class TimerHelper(listener: OnTimerListener) {
             mTimer = service!!.scheduleAtFixedRate(
                 mHealthTimer,
                 0,
-                1000,
+                946,
                 TimeUnit.MILLISECONDS
             )
         }
