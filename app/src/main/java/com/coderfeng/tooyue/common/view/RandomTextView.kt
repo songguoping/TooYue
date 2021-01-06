@@ -76,7 +76,7 @@ class RandomTextView @JvmOverloads constructor(
         super.onDraw(canvas)
         currText = this.currentValue?.toCharArray()!!
         drawNumber(canvas)
-        Log.d(TAG, "currText:$currentValue before:$String(beforeText)")
+        //Log.d(TAG, "currText:$currentValue before:$String(beforeText)")
     }
 
     private fun drawNumber(canvas: Canvas?) {

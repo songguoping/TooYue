@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/birthdayFragment"> <!-- Change start tab -->
+
+    <keep_state_fragment
+        android:id="@+id/birthdayFragment"
+        android:name="com.coderfeng.tooyue.home.fragment.BirthdayFragment"
+        android:label="birthdayFragment" />
+    <keep_state_fragment
+        android:id="@+id/todoFragment"
+        android:name="com.coderfeng.tooyue.home.fragment.TodoFragment"
+        android:label="todoFragment" />
+    <keep_state_fragment
+        android:id="@+id/tomatoClockFragment"
+        android:name="com.coderfeng.tooyue.home.fragment.TomatoClockFragment"
+        android:label="tomatoClockFragment" />
+    <keep_state_fragment
+        android:id="@+id/myFragment"
+        android:name="com.coderfeng.tooyue.home.fragment.MyFragment"
+        android:label="myFragment" />
+</navigation>

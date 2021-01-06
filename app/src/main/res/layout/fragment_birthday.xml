@@ -4,7 +4,19 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="#237EAD"
         android:layout_height="match_parent">
+
+        <com.coderfeng.tooyue.common.view.ClockView
+            android:id="@+id/mClickView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:darkColor="#80ffffff"
+            app:lightColor="#ffffff"
+            app:textSize="@dimen/sp_14"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
@@ -19,11 +31,10 @@
             android:id="@+id/mTvAgo"
             android:layout_width="@dimen/dp_200"
             android:layout_height="@dimen/dp_40"
-            android:layout_marginTop="@dimen/dp_40"
             android:textSize="@dimen/sp_10"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/mClickView" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"

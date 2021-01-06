@@ -38,6 +38,11 @@ class TimerHelper(listener: OnTimerListener) {
         mHealthTimer?.resume()
     }
 
+    fun cancelTimer(){
+        mHealthTimer?.stop()
+        mTimer?.cancel(true)
+    }
+
     fun stopTimer() {
         mHealthTimer?.stop()
         mHealthTimer = null
